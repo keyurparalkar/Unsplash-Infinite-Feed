@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 //     className:'container mx-auto'
 // })``;
 
-const StyledContainer = tw.div`mx-auto`;
+const StyledContainer = tw.div`border`;
 
 const Container = (props) => (
     <StyledContainer>   
