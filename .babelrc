@@ -1,0 +1,8 @@
+// .babelrc
+// In .babelrc
+{
+    "plugins": [
+      "babel-plugin-macros",
+      "@babel/plugin-transform-react-jsx",
+    ]
+  }
