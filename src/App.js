@@ -1,18 +1,20 @@
-import Header from './Components/Header';
-import Container from "./Components/Container";
-import CardContainer from "./Components/CardContainer";
-import Card from './Components/Card';
+import { useEffect } from 'react';
+import tw from 'twin.macro';
 
-const mockData = [
-  {imgSrc:''}
-];
+import './tailwind.css';
+import Card from './Components/Card';
+import CardContainer from "./Components/CardContainer";
+import Header from './Components/Header';
 
 function App() {
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "#f5f5f5";
+  }, [])
+
   return (
-    <div tw="bg-gray-50">
-      <Container>
-          <Header/>
-      </Container>
+    <div tw="font-sans antialiased">
+      <Header/>
       <CardContainer>
               <Card/>
               <Card/>
