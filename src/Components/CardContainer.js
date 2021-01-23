@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 
-const StyledContainer = tw.div`flex flex-col justify-between items-center bg-red-200`;
+const StyledContainer = tw.div`flex flex-row items-center`;
 
 const CardContainer = (props) => (
     <StyledContainer>
