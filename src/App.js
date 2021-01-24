@@ -6,6 +6,8 @@ import Card from './Components/Card';
 import CardContainer from "./Components/CardContainer";
 import Header from './Components/Header';
 
+const StyledContainer = tw.div`font-sans antialiased`;
+
 function App() {
 
   useEffect(() => {
@@ -13,14 +15,24 @@ function App() {
   }, [])
 
   return (
-    <div tw="font-sans antialiased">
+    <StyledContainer>
       <Header/>
       <CardContainer>
               <Card/>
               <Card/>
               <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
         </CardContainer>
-    </div>
+    </StyledContainer>
   );
 }
 
