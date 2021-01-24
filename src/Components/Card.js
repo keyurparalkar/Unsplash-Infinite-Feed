@@ -15,10 +15,10 @@ const Card = (props) => (
         <div tw="p-6">
             <div id="downloads_likes" tw="flex flex-row text-gray-600 text-sm pb-2 font-semibold">
                 <div tw="flex flex-row">
-                    <DownloadIcon/>&nbsp; 1345
+                    <DownloadIcon/>&nbsp;1345
                 </div> &nbsp; &bull; &nbsp;
                 <div tw="flex flex-row">
-                    <LikeIcon/>&nbsp; 24
+                    <LikeIcon/>&nbsp;24
                 </div>
             </div>
             <div id="description"><h4 tw="font-semibold my-0 pb-1 text-lg">A man drinking a coffee.</h4></div>
