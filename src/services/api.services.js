@@ -4,4 +4,4 @@ import { invokeApi } from "../utils/api";
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
 
 export const getRandomPhotos = () =>
-    invokeApi($axiosPublic, '/photos/random', { "client_id": CLIENT_ID, "cound": 10 }, 'GET')
+    invokeApi($axiosPublic, '/photos/random', { "client_id": CLIENT_ID, "count": 10 }, 'GET')
