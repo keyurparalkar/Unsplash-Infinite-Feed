@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import tw from 'twin.macro';
+
+import './tailwind.css';
+import Card from './Components/Card';
+import CardContainer from "./Components/CardContainer";
+import Header from './Components/Header';
+
+const StyledContainer = tw.div`font-sans antialiased`;
 
 function App() {
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "#f5f5f5";
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledContainer>
+      <Header/>
+      <CardContainer>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+        </CardContainer>
+    </StyledContainer>
   );
 }
 

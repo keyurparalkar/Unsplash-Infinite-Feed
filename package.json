@@ -9,16 +9,23 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
     "autoprefixer": "^9.8.6",
+    "babel-plugin-macros": "^3.0.1",
     "postcss": "^7.0.35",
+    "postcss-cli": "^8.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "styled-components": "^5.2.1",
+    "tailwind.macro": "^1.0.0-alpha.10",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "twin.macro": "^2.1.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
+    "build:css": "postcss src/tailwind.css -o src/index.css",
+    "watch:css": "postcss src/tailwind.css -o src/index.css",
+    "start": "npm run watch:css & react-scripts start",
+    "build": "npm run build:css react-scripts build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components"
+    }
   }
 }
