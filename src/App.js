@@ -13,7 +13,6 @@ function App() {
 
   useEffect(() => {
     document.body.style.backgroundColor = "#f5f5f5";
-    console.log(process.env.REACT_APP_CLIENT_ID)
     const getData = async () => {
       const data = await getRandomPhotos();
       console.log(data);
