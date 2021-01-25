@@ -20,7 +20,7 @@ const CardContainer = (props) => {
     }, [])
 
 
-    const listPhotoData = photoData ? photoData.map(({ urls ,downloads, likes, alt_description, user}) => {
+    const listPhotoData = photoData ? photoData.map(({ id, urls ,downloads, likes, alt_description, user}) => {
         return <Card
                 imgUrl = {urls.regular}
                 downloads = {downloads}

@@ -1,13 +1,10 @@
 import React from 'react';
 import tw from 'twin.macro';
 
-import TagButton from "./TagButton";
 import DownloadIcon from "./Icons/download.icon";
 import LikeIcon from "./Icons/like.icon";
 
 const StyledCard = tw.div`lg:w-1/5 md:w-full sm:w-full my-2 bg-white rounded-lg overflow-hidden border shadow`;
-
-const tags = ["man", "drinking", "coffee"].map((val) => <TagButton>{val}</TagButton>);
 
 const Card = (props) => (
     <StyledCard>
@@ -25,7 +22,6 @@ const Card = (props) => (
             <div id="author" tw="my-0 text-gray-600 hover:underline">
                 {props.name}
             </div>
-            <div id="tags" tw="mt-4">{tags}</div>
         </div>
     </StyledCard>
 );
