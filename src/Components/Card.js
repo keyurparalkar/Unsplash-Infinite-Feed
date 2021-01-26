@@ -14,7 +14,7 @@ const CardDom = (props) => (
                         <DownloadIcon />&nbsp;{props.data.downloads}
                     </div> &nbsp; &bull; &nbsp;
                     <div tw="flex flex-row">
-                        <LikeIcon />&nbsp;{props.likes}
+                        <LikeIcon />&nbsp;{props.data.likes}
                     </div>
                 </div>
                 <div id="description"><h4 tw="font-semibold my-0 pb-1 text-lg">{props.data.alt_description}</h4></div>

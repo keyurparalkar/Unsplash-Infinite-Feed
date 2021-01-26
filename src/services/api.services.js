@@ -7,5 +7,5 @@ export const getRandomPhotos = (pageNumber, cancelToken) =>
     invokeApi($axiosPublic, '/photos/random', { 
         "client_id": CLIENT_ID, 
         "page": pageNumber,
-        "count": 2   
+        "count": 10   
     }, cancelToken, 'GET')

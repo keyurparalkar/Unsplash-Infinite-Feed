@@ -13,6 +13,7 @@ const usePhotos = (pageNumber) => {
     const [error, setError] = useState(false);
     const [photoData, setPhotoData] = useState([]);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(async ()=>{
         setLoading(true);
         setError(false);
