@@ -13,11 +13,11 @@ const usePhotos = (pageNumber) => {
     const [error, setError] = useState(false);
     const [photoData, setPhotoData] = useState([]);
 
-    useEffect(()=>{
+    useEffect(async ()=>{
         setLoading(true);
         setError(false);
         
-        getRandomPhotos(pageNumber, call1)
+        await getRandomPhotos(pageNumber, call1)
             .then(res => {
                 setPhotoData(prevPhotos => [...prevPhotos, ...res.data]);
                 setLoading(false);

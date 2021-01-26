@@ -12,7 +12,6 @@ const CardContainer = (props) => {
 
   let { Loading, error, photoData } = usePhotos(pageNumber);
   
-  console.log({ Loading, error, photoData })
   const observer = useRef();
   const lastPhotoRef = useCallback(node => {
     if(Loading) return;
