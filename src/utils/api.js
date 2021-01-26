@@ -1,4 +1,4 @@
-export const invokeApi = (axiosInstance, path, params={}, method = 'GET') => {
+export const invokeApi = (axiosInstance, path, params={}, cancelToken=null, method = 'GET') => {
         switch(method){
             case 'POST':
                 return axiosInstance.post(path, {
@@ -7,7 +7,8 @@ export const invokeApi = (axiosInstance, path, params={}, method = 'GET') => {
 
             default: 
                 return axiosInstance.get(path, {
-                    "params":params
+                    "params":params,
+                    cancelToken: cancelToken.token
                 }).then(resp => resp).catch(err => {throw err});
         }
         
